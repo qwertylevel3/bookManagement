@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputBookInformationDialog</class>
+ <widget class="QDialog" name="InputBookInformationDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>请输入图书详细信息</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>书名：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="3">
+    <widget class="QLineEdit" name="nameLineEdit"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>ISBN:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="3">
+    <widget class="QLineEdit" name="bookIDLineEdit"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>作者：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="3">
+    <widget class="QLineEdit" name="writerLineEdit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>译者：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" colspan="3">
+    <widget class="QLineEdit" name="translaterLineEdit"/>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>出版社：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" colspan="3">
+    <widget class="QLineEdit" name="publisherLineEdit"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>类别：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="3">
+    <widget class="QLineEdit" name="typenameLineEdit"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>价格：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QDoubleSpinBox" name="priceSpinBox"/>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>出版日期：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2" colspan="2">
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="displayFormat">
+      <string>yyyy/M/d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>数量：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QSpinBox" name="spinBox">
+     <property name="maximum">
+      <number>999999999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3" colspan="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>107</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLabel" name="messageLabel">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QPushButton" name="cancelButton">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QPushButton" name="okButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>bookIDLineEdit</tabstop>
+  <tabstop>writerLineEdit</tabstop>
+  <tabstop>translaterLineEdit</tabstop>
+  <tabstop>publisherLineEdit</tabstop>
+  <tabstop>typenameLineEdit</tabstop>
+  <tabstop>priceSpinBox</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>spinBox</tabstop>
+  <tabstop>okButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>InputBookInformationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>InputBookInformationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

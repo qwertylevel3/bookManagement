@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>title.png</file>
+        <file>add.png</file>
+        <file>borrow.png</file>
+        <file>delete.png</file>
+        <file>quit.png</file>
+        <file>renew.png</file>
+        <file>return.png</file>
+        <file>renew1.png</file>
+        <file>manager.png</file>
+        <file>delete2.png</file>
+    </qresource>
+</RCC>
